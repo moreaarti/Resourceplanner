@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="/assets/images/amdital/amdital-favicon.svg" sizes="24x24"/>
+    <title>Amdital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+  <!-- <script>!function(t,e,a,n){function o(){if(!e.getElementById(a)){var t=e.getElementsByTagName(n)[0],o=e.createElement(n);o.type="text/javascript",o.async=!0,o.src="https://cdn.prodcamp.com/js/prdcmp-sdk.js",t.parentNode.insertBefore(o,t)}}if("function"!=typeof t.ProdCamp){var c=function(){c.args.push(arguments)};c.p="PHJNSXLIG",c.args=[],c.t=t.ProdCampSettings&&t.ProdCampSettings.token,c.f=true,t.ProdCamp=c,"complete"===e.readyState?o():t.attachEvent?t.attachEvent("onload",o):t.addEventListener("load",o,!1)}}(window,document,"prodcamp-js","script");</script>
+  <script>
+    const data=localStorage.getItem("data");
+    const readvalues=JSON.parse(data);
+    ProdCamp('initFeedbackWidget', {
+        email: readvalues?.email,
+        company: {
+          name: "",
+          revenue: 100
+        },
+        firstName: readvalues?.firstName,
+        lastName: readvalues?.lastName,
+        avatarUrl:readvalues?.profile_image_url
+    });
+</script> -->
+<!-- <script>
+  ProdCamp('initChangelog');
+</script> -->
+</html>
