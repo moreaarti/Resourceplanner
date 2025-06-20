@@ -1,0 +1,38 @@
+ <svg
+                
+                className="cursor-pointer"
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="18"
+                viewBox="0 0 17 18"
+                fill="none"
+              >
+                <path
+                  d="M1.04688 4.41016H2.64949H15.4704"
+                  stroke="#E1DCFF"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M13.8667 4.40996V15.61C13.8667 16.0343 13.6979 16.4413 13.3973 16.7413C13.0968 17.0414 12.6892 17.21 12.2641 17.21H4.25105C3.82601 17.21 3.41838 17.0414 3.11783 16.7413C2.81728 16.4413 2.64844 16.0343 2.64844 15.61V4.40996M5.05236 4.40996V2.80996C5.05236 2.38561 5.22121 1.97865 5.52176 1.67859C5.8223 1.37853 6.22994 1.20996 6.65498 1.20996H9.86021C10.2852 1.20996 10.6929 1.37853 10.9934 1.67859C11.294 1.97865 11.4628 2.38561 11.4628 2.80996V4.40996"
+                  stroke="#E1DCFF"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M6.65625 8.41016V13.2102"
+                  stroke="#E1DCFF"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M9.86133 8.41016V13.2102"
+                  stroke="#E1DCFF"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>

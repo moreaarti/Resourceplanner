@@ -1,0 +1,108 @@
+.dashboard_event .rbc-calendar {
+    background-color: #FFFFFF !important;
+}
+.dashboard_event .rbc-toolbar{
+    border: 1px solid transparent !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex !important;
+}
+.dashboard_event .rbc-toolbar .rbc-toolbar-label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color:#26212E;
+  width: 130px;
+}
+.dashboard_event .rbc-toolbar .rbc-btn-group{
+    display: flex;
+    height: 32px;
+    gap: 16px;
+}
+.dashboard_event .rbc-toolbar .rbc-btn-group button{
+    width: 92px;
+    height: 32px;
+    background: #FF845C;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 5%;
+    font-weight: 600;
+    color:#FFFFFF;
+}
+.dashboard_event .rbc-toolbar span:nth-child(3) {
+  display: none;
+}
+.dashboard_event .rbc-month-view{
+  margin-top: 16px;
+  border-top: 1px solid #E1DCFF;
+  border-left:none; 
+  border-right:none;
+  border-bottom:none;  
+}
+.dashboard_event .rbc-month-view .rbc-month-header .rbc-header{
+  border: 1px solid #E1DCFF;
+  background: #F8F7FC;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.dashboard_event .rbc-month-view .rbc-month-row .rbc-row-bg{
+  background-color: #FFFFFF;
+}
+.dashboard_event .rbc-month-view .rbc-month-row .rbc-row-bg .rbc-day-bg{
+  border-right: 1px solid #E1DCFF !important;
+  border-bottom:1px solid #E1DCFF !important ;
+}
+.dashboard_event .rbc-month-view .rbc-month-row .rbc-row-bg div:nth-child(7) {
+  border-right: 1px solid transparent !important;
+}
+.dashboard_event .rbc-month-view .rbc-month-row .rbc-row-bg .rbc-off-range-bg{
+  background-color: #FFFFFF !important;
+}
+.dashboard_event .rbc-month-view .rbc-month-row .rbc-today{
+  background-color: #FFFFFF !important;
+}
+.dashboard_event .rbc-month-view .rbc-row-content .rbc-row .rbc-date-cell button{
+  font-size: 14px;
+  color: #9F9F9F;
+  line-height: 12px;
+  font-weight: 400;
+}
+.dashboard_event .rbc-month-view .rbc-row-content .rbc-row.rbc-row-segment{
+  width: 56px !important;
+  height: 16px !important;
+}
+.dashboard_event .rbc-month-view .rbc-row-content .rbc-row .rbc-event{
+  width: 56px !important;
+  height: 16px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.dashboard_event .rbc-month-view .rbc-row-content .rbc-row .rbc-event-content{
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #26212E;
+}
+
+  

@@ -1,0 +1,923 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tooltip-sidebar {
+  z-index: 150; /* Higher than Sidebar's z-[100] */
+}
+
+.yoopta-toolbar-root{
+  margin-left: 200px;
+}
+.yoopta-action-menu-list{
+  max-height: 200px !important;
+}
+
+
+  /* Container for styling purposes */
+  .date-input-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  input[type="date"] {
+    -webkit-appearance: menulist; 
+    -moz-appearance: textfield;  
+    appearance: auto;          
+    padding: 10px;   
+    font-size: 14px;
+    font-weight:400 ;
+    color: #26212E;
+    border: 1px solid #DCD6FF;
+    margin-top: 4px;
+    background-color: #F8F7FC;
+
+  }
+  
+  .custom-date-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;    
+    appearance: none;    
+    position: relative;
+    width: 100%;
+    padding: 10px 40px 10px 10px; 
+    border: 1px solid #DCD6FF;
+    border-radius: 4px;
+  }
+  
+  .custom-date-input::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    width: 33px;
+    height: 30px;
+    background-image: url('/assets/images/amdital/date_image.svg'); 
+    background-size: cover;
+    pointer-events: none; 
+  }
+
+  .custom-date-input:hover {
+    border: 2px solid #8B5CF6;
+  }
+  
+
+.button-loader {
+  animation: spin 1s linear infinite !important;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.spin-animation {
+  animation: spin 1s linear infinite;
+}
+
+/* scroll issue  */
+
+/* For Webkit-based browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 5px; /* Scrollbar width */
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #DCD6FF; /* Thumb color */
+  border-radius: 20px; /* Rounded edges for the thumb */
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #c0becc; /* Darker shade of thumb color on hover */
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 255, 0); /* Track color */
+  border-radius: 20px; /* Rounded edges for the track */
+}
+
+/* input */
+
+.input-with-icon {
+  padding: 10px 10px 10px 40px;
+  background-image: url('../public/assets/images/amdital/search_gray_color.svg'); /* Replace with your icon URL */
+  background-size: 20px 20px; /* Adjust the size of the icon */
+  background-repeat: no-repeat;
+  background-position: 10px center; /* Position the icon */
+}
+
+
+
+/* global css */
+
+@media print {
+  /* All your print styles go here */
+  .sidebar,.navbarprint,.Tasksetimateprint,.TicketOverviewprint,.AccountOverviewprint,
+  #prodcamp-widgets,.menubarthreedotprint {
+    display: none !important;
+  }
+}
+
+.background_color{
+
+  background: linear-gradient(to bottom right, #1F0E3A, #260B6A);
+
+}
+
+.blink {
+  animation: blink-animation 1s step-start infinite;
+}
+
+@keyframes blink-animation {
+  50% {
+    opacity: 0;
+  }
+}
+
+.sidebar_color{
+
+  background: linear-gradient(to bottom, #1F0E3A, #260B6A);
+  
+}
+.checkout-box-shadow {
+  box-shadow: -4px 4px 4px 0px #260B6A1A;
+}
+
+
+.content_new{
+  width: 100%;
+  margin-top: 56px;
+}
+
+/* nav bar css */
+.navbar_new{
+  position: sticky;
+  top:0;
+  z-index: 999;
+  width: 100%;
+  background: red;
+}
+
+.nav_menu:active {
+  text-decoration: none;
+}
+
+.nav_menu {
+  text-decoration: none;
+}
+
+.nav_menu:hover {
+  text-decoration: none;
+}
+
+.nav_menu .nav_menu_img1{
+  visibility: visible;
+}
+.nav_menu .nav_menu_img2 {
+  visibility: hidden;
+}
+.nav_menu:hover .nav_menu_img1 {
+  display: none;
+}
+.nav_menu:hover .nav_menu_img2 {
+  visibility: visible;
+}
+.nav_menu.active .nav_menu_img1 {
+  display: none;
+}
+.nav_menu.active .nav_menu_img2 {
+  visibility: visible;
+}
+ .nav_menu.active {
+  background: #806BFF;
+  visibility: visible;
+}
+.nav_menu:hover {
+  background: #806BFF;
+} 
+
+.nav_menu .side_border {
+  visibility: hidden;
+}
+
+.nav_menu.active .side_border {
+  visibility: visible;
+}
+.nav_menu:hover .side_border {
+  visibility: visible;
+} 
+ 
+
+.navbar_new .nav-bar-img{
+  max-width: none !important;
+}
+
+@media (min-width: 500px){
+  .workspace_mobile_view{
+    margin-left:64px;
+  }
+}
+@media (max-width: 500px){
+  .workspace_mobile_view{
+    margin-left:44px;
+  }
+}
+
+
+
+  /* tinyamc code  */
+
+  .tox-statusbar{
+    display: none !important;
+  }
+  .tox-toolbar__primary {
+    background-color: #F7F7F8 !important;
+    border-radius: none !important;
+    border: 1px solid #EAEAEA !important ;
+  }
+  .tox-editor-header{
+    padding: 0px !important;
+  }
+  
+  .tox-tinymce{
+    border: 1px solid  #EAEAEA !important;
+    border-radius: 4px !important;
+  }
+
+  .text-editor-react .tox.tox-edit-focus .tox-edit-area::before{
+    opacity: 0 !important;
+  }
+
+
+  .content-tinymce-react .tox-tinymce{
+    border: none !important; /* Remove border */
+    background: transparent !important; /* Make background transparent */
+    padding: 0 !important; /* Remove padding */
+    font-size: 14px !important; /* Match textarea font size */
+    box-shadow: none !important; /* Remove any box shadow */
+  }
+  .content-tinymce-react  .mce-content-body img{
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  .plain-textarea p img {
+    max-width: 100% !important; /* Ensure images do not overflow */
+    height: auto !important; /* Maintain aspect ratio */
+    width: 100px !important; /* Set your desired width */
+  }
+
+  
+
+
+/*  shadow */
+.custom-shadow{
+  box-shadow: 1px 1px 16px 0px #00000014;
+}
+.custom-shadow-dropdown{
+  box-shadow: 4px 4px 4px 0px #26212E1A;
+}
+/* input */
+input:-internal-autofill-selected {
+  background-color:none !important
+}
+/*  */
+
+.text-wrap-all{
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+.text-wrap {
+  white-space: normal;
+  overflow-wrap: break-word; /* Ensures words will break and wrap onto the next line */
+  word-break: break-word; /* Handle very long unbroken text segments */
+}
+
+/* auto fill color in input tags */
+
+/* For Google Chrome and Safari */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #F7F7F8 inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+/* For Mozilla Firefox */
+input:-moz-autofill {
+  box-shadow: 0 0 0 1000px #F7F7F8 inset !important;
+  -moz-text-fill-color: #000 !important;
+}
+
+/* For Microsoft Edge */
+input:-ms-autofill {
+  box-shadow: 0 0 0 1000px #F7F7F8 inset !important;
+  -ms-text-fill-color: #000 !important;
+}
+
+
+
+/* table data css */
+.custom-table{
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+  border: 0px solid transparent !important;
+}
+.custom-table .rdt_Table{
+  border-top: 1px solid #E1DCFF !important;
+}
+.custom-table .rdt_TableHeadRow{
+  min-height: 44px !important;
+  background-color: #F8F7FC !important;
+  border-bottom: 1px solid #E1DCFF !important;
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color:#26212E !important;
+  line-height: 16px !important;
+}
+.custom-table .rdt_TableCell {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color:#26212E;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  /* border-bottom: 1px solid #E1DCFF !important; */
+  /* border-left: 1px solid #E1DCFF !important; */
+}
+.custom-table .hDHZZh{
+  font-size: 14px;
+  font-weight: 400;
+}
+.custom-table .rdt_TableRow:hover .row-hover-icon {
+  display: flex; 
+}
+.custom-table .row-hover-icon {
+  display: none; 
+  transition: opacity 0.2s ease-in-out; 
+}
+.custom-table input[type="checkbox"] {
+  appearance: none; /* Remove default styling */
+  -webkit-appearance: none; /* For Safari */
+  border: 1px solid #26212E; /* Border color */
+  border-radius: 4px; /* Optional rounded corners */
+  outline: none;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background-color: #F7F7F8;
+}
+.custom-table input[type="checkbox"] {
+  accent-color: #806BFF; 
+  width: 16px;
+  height: 16px;
+}
+.custom-table input[type="checkbox"]:checked::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/assets/images/amdital/checkbox_icon_new.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 3px;
+}
+
+/* table dashboard data css */
+
+.dashboard-table{
+  /* border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important; */
+  border: 0px solid transparent !important;
+}
+.dashboard-table .rdt_Table{
+  border-top: 1px solid #E1DCFF !important;
+}
+.dashboard-table .rdt_TableHeadRow{
+  /* min-height: 44px !important; */
+  background-color: #F8F7FC !important;
+  border-bottom: 1px solid #E1DCFF !important;
+  /* border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important; */
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color:#26212E !important;
+  line-height: 16px !important;
+}
+.dashboard-table .rdt_TableCell {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color:#26212E;
+}
+.dashboard-table .hDHZZh{
+  font-size: 14px;
+  font-weight: 400;
+}
+.dashboard-table .rdt_TableRow:hover .row-hover-icon {
+  display: flex; 
+}
+.dashboard-table .row-hover-icon {
+  display: none; 
+  transition: opacity 0.2s ease-in-out; 
+}
+.dashboard-table input[type="checkbox"] {
+  appearance: none; /* Remove default styling */
+  -webkit-appearance: none; /* For Safari */
+  border: 1.5px solid #26212E; /* Border color */
+  border-radius: 4px; /* Optional rounded corners */
+  outline: none;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.dashboard-table input[type="checkbox"] {
+  accent-color: #806BFF; 
+  width: 20px;
+  height: 20px;
+}
+.dashboard-table input[type="checkbox"]:checked::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/assets/images/amdital/tick_icon_white.svg');
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  border-radius: 2.5px;
+  background-color: #806BFF;
+
+}
+
+.rdt_TableRow:hover {
+  background-color: #E1DCFF !important; /* Change to your desired color */
+}
+
+.rdt_TableRow .project-three-dots-black-icon {
+  display: none; 
+}
+
+.rdt_TableRow:hover .project-three-dots-black-icon {
+  display: flex; 
+}
+.rdt_TableRow:hover .project-three-dots-gray-icon {
+  display: none; 
+  transition: opacity 0.2s ease-in-out; 
+}
+
+
+.employee-table{
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+  border: 0px solid transparent !important;
+}
+.employee-table .rdt_TableHeadRow{
+  /* min-height: 44px !important; */
+  background-color: #F8F7FC !important;
+  border-bottom: 1px solid #E1DCFF !important;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  /* border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important; */
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color:#26212E !important;
+  line-height: 16px !important;
+}
+.employee-table .rdt_TableCell {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color:#26212E;
+}
+.employee-table .hDHZZh{
+  font-size: 14px;
+  font-weight: 400;
+}
+.employee-table .rdt_TableRow:hover .row-hover-icon {
+  display: flex; 
+}
+.employee-table .row-hover-icon {
+  display: none; 
+  transition: opacity 0.2s ease-in-out; 
+}
+.employee-table input[type="checkbox"] {
+  appearance: none; /* Remove default styling */
+  -webkit-appearance: none; /* For Safari */
+  border: 1.5px solid #26212E; /* Border color */
+  border-radius: 4px; /* Optional rounded corners */
+  outline: none;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.employee-table input[type="checkbox"] {
+  accent-color: #806BFF; 
+  width: 20px;
+  height: 20px;
+}
+.employee-table input[type="checkbox"]:checked::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/assets/images/amdital/tick_icon_white.svg');
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  border-radius: 2.5px;
+  background-color: #806BFF;
+
+}
+
+
+
+
+
+
+
+
+/* animation  */
+
+.animated-bottom-to-top {
+  transition: height 0.2s ease-in-out;
+}
+
+
+/* text new */
+
+
+/* line-height based on text */
+
+/* font size 12px  line- height 16px */
+
+/* font size 13px 14px 16px line-height 18px */
+
+/* font size 18px  line-height 24px */
+
+/* font size 24px  line-height px */
+
+.header_h2{
+  font-size: 28px; 
+  font-weight: 600;
+  color: #26212E;
+  line-height: 32px;
+}
+
+.header_h3{
+  /* font size 24px */
+  font-size: 24px; 
+  font-weight: 700;
+  color: #26212E;
+}
+
+
+.header_h5{
+  /* font size 20px */
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #26212E;
+}
+
+.header_title_h1_black{
+  /* font size 16px */
+  font-size: 1rem;
+  font-weight: 600;
+  color: #26212E;
+}
+
+.header_title_h2_black{
+  /* font size 14px */
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.header_title_h2_red{
+  /* font size 14px */
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #EA4242;
+}
+
+.sub_title_black{
+  /* font size 14px */
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #26212E;
+}
+
+.below_logo_content_black{
+  /* font size 14px */
+  font-size: 13px;
+  font-weight: 400;
+  color: #26212E;
+  line-height:18px;
+}
+
+
+.normal_content_black{
+  /* font size 14px */
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #26212E;
+}
+
+.normal_content_white{
+  /* font size 14px */
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.normal_content_red{
+  /* font size 14px */
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #EA4242;
+}
+
+.normal_content_green{
+  /* font size 14px */
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #00B656;
+}
+
+
+
+/* headers */
+
+.headline_h1{
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #26212E;
+}
+
+.headline_h5{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #26212E;
+}
+
+/* subTilte */
+
+.subtitle_s1{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #26212E;
+}
+
+.subtitle_s2{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #26212E;
+}
+
+.subtitle_s4{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #26212E;
+}
+
+/* content */
+
+.content_c3{
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #26212E;
+}
+
+/* labels and inputs */
+
+.label_text{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #26212E;
+}
+.input_text{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #26212E;
+}
+.input_text::placeholder{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* Links */
+.link_l1{
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #806BFF;
+}
+
+
+
+
+
+/* Custom styling for the select element */
+.custom-select {
+  appearance: none; /* Remove default browser dropdown arrow */
+  -webkit-appearance: none; /* Also for Safari */
+  width: 100%;
+  position: relative;
+  outline: none;
+  background-image: url('../public/assets/images/amdital/select_dropdown_down_arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 12px;
+  padding-right: 30px;
+}
+
+.custom-select:focus {
+  background-image: url('../public/assets/images/amdital/select_dropdown_up_arrow.svg');
+}
+
+
+
+
+select {
+  width: auto;
+}
+
+.custom-select_new {
+  /* Set the desired width here */
+  width: 320px;
+}
+
+/* Optional: Ensure options don't wrap at small screen sizes (adjust min-width as needed) */
+@media (max-width: 768px) {
+  .custom-select_new option {
+    min-width: 150px; /* Adjust based on your content length */
+  }
+}
+
+
+.animated_bg{
+  width: 100px;
+  height: 18px;
+  background-color: #C8C8C8;
+  background-image: linear-gradient(90deg, #E0E0E0 0%,  #E0E0E0 50%  ,transparent 100%);
+ /* border-radius: 10px; */
+  animation: animated_bg 0.5s linear infinite;
+}
+  
+@keyframes animated_bg{
+  to{
+     background-position-x:100px; 
+  }
+    
+  };
+
+/* addd */
+
+
+
+
+.box {
+  box-shadow: 0px 0px 10px 5px rgba(146, 145, 145, 0.5);
+}
+
+
+
+
+.skeleton {
+  animation-duration: 1s;
+}
+
+
+.dot-1, .dot-2, .dot-3 {
+  animation: blink 1.4s infinite both;
+}
+.dot-2 {
+  animation-delay: 0.2s;
+}
+.dot-3 {
+  animation-delay: 0.4s;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+.progress_bar{
+  width: 100px;
+  height: 15px;
+  background-color: #FF845C;
+  border-radius: 12px;
+  background-image: linear-gradient(-45deg, #52515144 0%, #52515144 25%, transparent 25% ,transparent 50% ,
+  #52515144 50%, #52515144 75%, transparent 75% ,transparent 100%
+  );
+  background-size: 15px;
+  animation: progress_bar 1s linear infinite;
+}
+  
+@keyframes progress_bar{
+  to{
+     background-position-x:30px; 
+  }
+    
+  };
+
+
+
+  /* Custom scrollbar for Webkit browsers */
+  textarea::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+  }
+  
+  textarea::-webkit-scrollbar-thumb {
+    background: #c7b8f5; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded scrollbar thumb */
+  }
+  
+  
+  /* Optional: Add hover effects for the scrollbar */
+  textarea::-webkit-scrollbar-thumb:hover {
+    background: #a892d8; /* Darker thumb color on hover */
+  }
+  
+
+  .setting_nav_menu.active {
+    visibility: visible;
+    font-size: 600;
+    border-bottom:1px solid #FF845C ;
+    color:#FF845C
+  }
+  .setting_nav_menu:hover {
+    font-size: 600;
+    border-bottom:1px solid #FF845C ;
+    color:#FF845C
+  } 
+
+
+  .custom-checkbox-back input[type="checkbox"] {
+    appearance: none; /* Remove default styling */
+    -webkit-appearance: none; /* For Safari */
+    border: 1.5px solid #26212E; /* Border color */
+    border-radius: 4px; /* Optional rounded corners */
+    outline: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    /* background-color: #F7F7F8; */
+  }
+  .custom-checkbox-back input[type="checkbox"] {
+    accent-color: #806BFF; 
+    width: 16px;
+    height: 16px;
+  }
+  .custom-checkbox-back input[type="checkbox"]:checked::before {
+    content: '';
+    display: flex;
+    padding-left: 14px;
+
+    width: 100%;
+    height: 100%;
+    background-image: url('../public/assets/images/amdital/checkbox_icon_new.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 3px;
+  }
+
+  .yoopta-editor {
+    width: 100% !important;
+  }
+  
+  

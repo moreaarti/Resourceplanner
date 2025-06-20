@@ -1,0 +1,46 @@
+/* new shift */
+
+@media (max-width: 1280px) {
+    .timeline-container {
+      min-width: 100%;
+    }
+    .header-cell, .member-cell {
+      width: 18%;
+      min-width: 180px;
+    }
+    .schedule-cell {
+      min-width: 10%;
+      max-width: 12%;
+    }
+    .text-base {
+      font-size: 0.875rem; /* Adjust text size for smaller screens */
+    }
+    .text-sm {
+      font-size: 0.75rem;
+    }
+    .time{
+        font-size: 10px !important;
+    }
+    .header-cell .member-cell{
+        width: 282px !important;
+    }
+  }
+  @media (max-width: 1024px) {
+    .header-cell, .member-cell {
+      width: 15%;
+      min-width: 150px;
+    }
+    .schedule-cell {
+      min-width: 8%;
+      max-width: 10%;
+    }
+    .text-base {
+      font-size: 0.75rem;
+    }
+    .text-sm {
+      font-size: 0.625rem;
+    }
+  
+
+   
+  }

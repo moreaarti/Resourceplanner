@@ -1,0 +1,51 @@
+   <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="19"
+                        viewBox="0 0 12 19"
+                        fill="none"
+                      >
+                        {/* SVG paths for drag handle */}
+                        <path
+                          d="M2 10.9375C2.55228 10.9375 3 10.4898 3 9.9375C3 9.38522 2.55228 8.9375 2 8.9375C1.44772 8.9375 1 9.38522 1 9.9375C1 10.4898 1.44772 10.9375 2 10.9375Z"
+                          stroke="#DCD6FF"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M2 3.9375C2.55228 3.9375 3 3.48978 3 2.9375C3 2.38522 2.55228 1.9375 2 1.9375C1.44772 1.9375 1 2.38522 1 2.9375C1 3.48978 1.44772 3.9375 2 3.9375Z"
+                          stroke="#DCD6FF"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M2 17.9375C2.55228 17.9375 3 17.4898 3 16.9375C3 16.3852 2.55228 15.9375 2 15.9375C1.44772 15.9375 1 16.3852 1 16.9375C1 17.4898 1.44772 17.9375 2 17.9375Z"
+                          stroke="#DCD6FF"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M10 10.9375C10.5523 10.9375 11 10.4898 11 9.9375C11 9.38522 10.5523 8.9375 10 8.9375C9.44772 8.9375 9 9.38522 9 9.9375C9 10.4898 9.44772 10.9375 10 10.9375Z"
+                          stroke="#DCD6FF"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M10 3.9375C10.5523 3.9375 11 3.48978 11 2.9375C11 2.38522 10.5523 1.9375 10 1.9375C9.44772 1.9375 9 2.38522 9 2.9375C9 3.48978 9.44772 3.9375 10 3.9375Z"
+                          stroke="#DCD6FF"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M10 17.9375C10.5523 17.9375 11 17.4898 11 16.9375C11 16.3852 10.5523 15.9375 10 15.9375C9.44772 15.9375 9 16.3852 9 16.9375C9 17.4898 9.44772 17.9375 10 17.9375Z"
+                          stroke="#DCD6FF"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>

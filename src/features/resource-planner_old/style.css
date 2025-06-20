@@ -1,0 +1,185 @@
+@import "./items.css";
+body {
+  font-size: 18px;
+  background: #fafafa;
+}
+
+.resource-planner .rct-day-6,
+.resource-planner .rct-day-0 {
+  /* background: #f8f7fc !important; */
+  z-index: 10 !important;
+  pointer-events: none !important;
+}
+
+.resource-planner .react-calendar-timeline .rct-item-content {
+  border: dotted 1px deepskyblue;
+}
+
+.resource-planner .react-calendar-timeline .rct-horizontal-lines .rct-hl-even,
+.resource-planner .react-calendar-timeline .rct-horizontal-lines .rct-hl-odd {
+  /* border-bottom: none; */
+  border-bottom: 1px solid #e1dcff !important;
+}
+
+.resource-planner .rct-header-root div:first-child::after {
+  content: "Member";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.resource-planner .react-calendar-timeline .rct-horizontal-lines .rct-hl-even,
+.resource-planner .react-calendar-timeline .rct-horizontal-lines .rct-hl-odd {
+  background-color: #ffffff;
+}
+
+.resource-planner .react-calendar-timeline .rct-sidebar .rct-sidebar-row {
+  border-bottom: none;
+}
+
+.resource-planner .react-calendar-timeline .rct-header .rct-label {
+  border-bottom: none;
+}
+
+.resource-planner
+  .react-calendar-timeline
+  .rct-vertical-lines
+  .rct-vl.rct-vl-first {
+  border-color: #ccc;
+}
+
+.resource-planner .react-calendar-timeline .rct-vertical-lines .rct-vl {
+  border-left: 1px solid #eeeeee87;
+}
+
+.resource-planner .react-calendar-timeline .rct-header .rct-label-group {
+  background: #eee;
+  color: #000;
+  font-size: 1rem;
+}
+
+.resource-planner .react-calendar-timeline .rct-sidebar-header {
+  background: #eee;
+  color: #000;
+  text-align: center;
+  padding-top: 1rem;
+  border: none;
+  border-right: solid 2px #ccc !important;
+}
+
+.resource-planner .react-calendar-timeline .rct-scroll {
+  overflow-x: hidden !important;
+}
+
+.resource-planner .react-calendar-timeline .rct-header-root {
+  background: #f8f7fc;
+  /* border-top: 1px solid #e1dcff; */
+  border-bottom: 1px solid #e1dcff;
+}
+
+/* inside your index.css or global.css file */
+
+.resource-planner .rct-sidebar-row {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 12px !important;
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e1dcff !important;
+}
+.resource-planner .react-calendar-timeline .rct-dateHeader-primary {
+  color: #26212e;
+  border-right: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+.resource-planner .react-calendar-timeline .rct-dateHeader {
+  border-left: none;
+  background-color: transparent;
+  border-bottom: none;
+}
+
+.resource-planner .react-calendar-timeline .rct-vertical-lines .rct-vl {
+  border-left: 1px solid #e1dcff;
+}
+.resource-planner .react-calendar-timeline .rct-horizontal-lines .rct-hl-even,
+.react-calendar-timeline .rct-horizontal-lines .rct-hl-odd {
+  border-bottom: 1px solid #e1dcff;
+}
+.resource-planner .rct-item {
+  border-radius: 50px !important;
+}
+
+.resource-planner .react-calendar-timeline .rct-calendar-header {
+  border: none;
+  border-left: 1px solid #e1dcff;
+}
+.resource-planner .react-calendar-timeline .rct-sidebar {
+  border-right: none;
+  border-bottom: 1px solid #e1dcff;
+}
+.resource-planner .rct-header-root div:first-child {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 40px;
+  color: #26212e;
+}
+
+.resource-planner .tooltip-container {
+  position: relative;
+
+  z-index: 130;
+}
+
+.resource-planner .tooltip {
+  visibility: visible;
+  opacity: 0;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 12px;
+  width: max-content;
+  transition:
+    visibility 0s,
+    opacity 0.3s ease-in-out;
+  z-index: 120;
+}
+
+.resource-planner .rct-item:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.resource-planner
+  .react-calendar-timeline
+  .rct-vertical-lines
+  .rct-vl.rct-vl-first {
+  border-color: #e1dcff !important;
+}
+.fc .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 0 !important;
+}
+/* 
+.calendar-background {
+  background: #f8f7fc !important;
+} */
+.weekend-bg {
+  background-color: #f8f7fc !important;
+}
+.fc-license-message {
+  display: none !important;
+}
+.resource-header {
+  height: 70px !important;
+}
+.fc-resource-timeline .fc-datagrid-cell-main {
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+}
+.fc .fc-scrollgrid {
+  border: 1px solid #e1dcff !important;
+}
